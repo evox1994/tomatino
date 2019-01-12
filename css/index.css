@@ -444,5 +444,6 @@
 	}
 	.b-3 .catalog li {
 		width: 100%;
+		border-color: rgb(227, 228, 227);
 	}
 }

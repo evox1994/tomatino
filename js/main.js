@@ -38,4 +38,14 @@ $(document).ready(function(){
 		$('body').removeClass('active');
 	});
 
+	$('.scroll-btn').click(function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top - 70;
+		$('html,body').animate({scrollTop: des},800);
+		$('.mobile-btn').removeClass('active');
+		$('.mobile-menu').removeClass('active');
+		$('body').removeClass('active');
+		return false;
+	});
+
 });
