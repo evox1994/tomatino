@@ -34,7 +34,7 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	top: calc(50% - 50px);
+	top: calc(50% - 40px);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -439,6 +439,9 @@
 
 
 @media screen and (max-width: 1280px){
+	.b-1-slide {
+		padding: 0 30px;
+	}
 	.b-3-list li span {
 		text-align: left;
 	}
@@ -447,6 +450,14 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1-slide {
+		padding: 0 40px;
+	}
+	.b-1-slider .slick-arrow {
+		width: 30px;
+		height: 30px;
+		top: calc(50% - 35px);
+	}
 	.b-1 h2 {
 		font-size: 48px;
 	}
