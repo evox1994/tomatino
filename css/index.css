@@ -29,6 +29,28 @@
 .b-1-slider .slick-dots li.slick-active button {
 	background-color: rgb(255, 93, 36);
 }
+.b-1-slider .slick-arrow {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: calc(50% - 50px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;
+	border: 0;
+	font-size: 0;
+	z-index: 1;
+}
+.b-1-slider .slick-prev {
+	left: 10px;
+	background-image: url('../i/left-arrow.svg');
+}
+.b-1-slider .slick-next {
+	right: 10px;
+	background-image: url('../i/right-arrow.svg');
+}
 .b-1-slide {
 	background-position: center;
 	background-size: cover;

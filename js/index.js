@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 	$('.b-1-slider').slick({
-		arrows: false,
 		dots: true,
-		fade: true
+		fade: true,
+		autoplay: true
 	});
 
 	$('.b-4-list li a').click(function(){
