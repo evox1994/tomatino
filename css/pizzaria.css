@@ -1,0 +1,230 @@
+.b-1 .b-1-wrap {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../i/pizzaria-fon.jpg');
+	box-sizing: border-box;
+	padding: 160px 60px;
+}
+.b-1 h1 {
+	display: block;
+	width: 50%;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: left;
+	font-size: 40px;
+	font-family: 'DIN Condensed';
+	color: #ffffff;
+}
+.b-1 h1 span {
+	color: rgb(231, 62, 29);
+}
+
+.b-2 .b-block {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.b-2 .filter {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+.b-2 .filter li {
+	display: block;
+	box-sizing: border-box;
+	width: calc(25% - 22.5px);
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+	padding: 10px;
+	font-family: 'FuturaDemi';
+	font-size: 17px;
+	color: rgb(122, 128, 128);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .filter li:hover {
+	cursor: pointer;
+}
+.b-2 .filter li.active {
+	color: rgb(231, 62, 29);
+	border-color: rgb(231, 62, 29);
+}
+.b-2-text {
+	display: block;
+	font-family: 'FuturaDemi';
+	line-height: 1.2;
+	font-size: 24px;
+	color: rgb(122, 128, 128);
+	margin-bottom: 60px;
+}
+.b-2-text a {
+	color: #000000;
+}
+.b-2 .info-list {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+.b-2 .info-list li {
+	width: 33%;
+}
+.b-2 .info-list li p {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	max-width: 100%;
+	padding-left: 90px;
+	font-size: 17px;
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	font-family: 'FuturaDemi';
+	text-align: left;
+}
+.b-2 .info-list li p span {
+	font-family: 'FuturaFuturisLightC';
+	color: #000000;
+	font-size: 24px;
+}
+.b-2 .info-list li p img {
+	display: block;
+	max-width: 60px;
+	max-height: 50px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.b-2 .image-list {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+.b-2 .image-list li {
+	box-sizing: border-box;
+	width: calc(100%/3);
+	padding: 0 10px;
+	margin-bottom: 30px;
+}
+.b-2 .image-list li a {
+	display: inline-block;
+	max-width: 100%;
+}
+.b-2 .image-list li a img {
+	display: block;
+	max-width: 100%;
+}
+
+.b-3 .b-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.b-3-list li {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 auto 60px;
+	text-align: left;
+}
+.b-3-list li:nth-child(odd){
+	padding-left: 410px;
+}
+.b-3-list li:nth-child(even){
+	padding-right: 410px;
+}
+.b-3-list li img {
+	display: block;
+	max-width: 380px;
+	position: absolute;
+	top: 0;
+}
+.b-3-list li:nth-child(odd) img{
+	left: 0;
+}
+.b-3-list li:nth-child(even) img{
+	right: 0;
+}
+.b-3-list li .name {
+	font-family: 'FuturaDemi';
+	color: #000000;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.b-3-list li p {
+	display: block;
+	font-size: 17px;
+	font-family: 'FuturaFuturisLightC';
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-2 .info-list li p {
+		padding-left: 70px;
+	}
+	.b-3-list li {
+		text-align: center;
+	}
+	.b-3-list li:nth-child(odd){
+		padding-left: 0;
+	}
+	.b-3-list li:nth-child(even){
+		padding-right: 0;
+	}
+	.b-3-list li img {
+		max-width: 100%;
+		position: static;
+		margin: 0 auto 30px;
+	}
+	.b-3-list li p {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 767px){
+	.b-1 .b-1-wrap {
+		background-position: left;
+		padding: 160px 20px;
+	}
+	.b-1 h1 {
+		width: 100%;
+	}
+	.b-2 .filter li {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.b-2 .info-list li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.b-2 .image-list li {
+		width: 100%;
+	}
+}
