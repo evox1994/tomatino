@@ -441,6 +441,7 @@
 @media screen and (max-width: 1280px){
 	.b-1-slide {
 		padding: 0 30px;
+		background-position: 35% center;
 	}
 	.b-3-list li span {
 		text-align: left;
@@ -452,6 +453,7 @@
 @media screen and (max-width: 767px){
 	.b-1-slide {
 		padding: 0 40px;
+		background-position: 30%;
 	}
 	.b-1-slider .slick-arrow {
 		width: 30px;
