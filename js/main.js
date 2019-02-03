@@ -32,6 +32,17 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.fancybox').fancybox();
+
+	$('.dop-add').click(function(){
+		if ( $(this).hasClass('active') ){
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+		return false;
+	});
+
 	$('.close-btn').click(function(){
 		$('.mobile-btn').removeClass('active');
 		$('.mobile-menu').removeClass('active');

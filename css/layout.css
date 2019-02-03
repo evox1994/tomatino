@@ -607,6 +607,372 @@ button:hover {
     max-width: 100%;
 }
 
+.popup {
+    box-sizing: border-box;
+    border-radius: 4px;
+    max-width: 1100px;
+    width: 95%;
+    background-color: #ffffff;
+    padding: 65px;
+}
+.popup:hover {
+    cursor: default;
+}
+.popup-wrap {
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.popup-wrap .image {
+    position: relative;
+    width: calc(50% - 15px);
+    height: 470px;
+}
+.popup-wrap .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.popup-wrap .text {
+    width: calc(50% - 15px);
+}
+.popup-wrap .text .name {
+    font-family: 'FuturaDemi';
+    font-size: 30px;
+    color: rgb(35, 31, 32);
+    margin-bottom: 30px;
+}
+.popup-wrap .text p {
+    display: block;
+    color: rgb(122, 128, 128);
+    font-size: 17px;
+    line-height: 1.2;
+    font-family: 'FuturaFuturisLightC';
+    margin-bottom: 50px;
+}
+.popup-list {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.popup-list li {
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 33%;
+}
+.popup-list li span {
+    position: relative;
+    font-family: 'FuturaDemi';
+    display: inline-block;
+    padding-left: 40px;
+    font-size: 14px;
+    color: rgb(35, 31, 32);
+    line-height: 1.2;
+}
+.popup-list li span b {
+    font-weight: normal;
+    font-family: 'FuturaFuturisLightC';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+.popup-list li span img {
+    display: block;
+    position: absolute;
+    max-width: 30px;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.popup-wrap .col {
+    margin-bottom: 50px;
+}
+.popup-wrap .col .less, .popup-wrap .col .more {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border: 1px solid #7a8080;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-wrap .col .less:hover, .popup-wrap .col .more:hover {
+    cursor: pointer;
+    border-color: rgb(255, 93, 36);
+}
+.popup-wrap .col .less::before, .popup-wrap .col .more::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #7a8080;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-wrap .col .less:hover:before, .popup-wrap .col .more:hover:before {
+    background-color: rgb(255, 93, 36);
+}
+.popup-wrap .col .more::after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 2px;
+    background-color: #7a8080;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-wrap .col .more:hover:after {
+    background-color: rgb(255, 93, 36);
+}
+.popup-wrap .col p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'FuturaDemi';
+    color: #7a8080;
+    line-height: 1.2;
+    width: 80px;
+    margin: 0 5px;
+    font-size: 24px;
+    text-align: center;
+}
+.popup-wrap .price-wrap {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popup-wrap .price {
+    font-family: 'FuturaDemi';
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgb(35, 31, 32);
+}
+.popup-wrap .add-btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 4px;
+    color: rgb(255, 93, 36);
+    font-size: 17px;
+    border: 1px solid rgb(255, 93, 36);
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'FuturaDemi';
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-wrap .add-btn:hover {
+    color: #ffffff;
+    background-color: rgb(255, 93, 36);
+}
+.popup-wrap .popup-price-wine {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'FuturaDemi';
+    color: rgb(128, 128, 128);
+    line-height: 1.2;
+}
+.popup-wrap .popup-price-wine span {
+    color: rgb(35, 31, 32);
+}
+.popup-dop .name {
+    font-family: 'FuturaDemi';
+    font-size: 24px;
+    color: rgb(35, 31, 32);
+    margin-bottom: 20px;
+}
+.popup-dop p {
+    display: block;
+    font-size: 17px;
+    line-height: 1.2;
+    color: rgb(122, 128, 128);
+    font-family: 'FuturaFuturisLightC';
+    margin-bottom: 25px;
+}
+.popup-dop p span {
+    color: rgb(255, 93, 36);
+}
+.popup-dop .dop-list {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.popup-dop .dop-list li {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.popup-dop .dop-list .image {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+}
+.popup-dop .dop-list .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.popup-dop .dop-list .dop-name {
+    font-family: 'FuturaDemi';
+    font-size: 18px;
+    color: rgb(35, 31, 32);
+}
+.popup-dop .dop-list .dop-info {
+    font-size: 17px;
+    line-height: 1.2;
+    color: rgb(122, 128, 128);
+    font-family: 'FuturaFuturisLightC';
+    margin-bottom: 10px;
+}
+.popup-dop .dop-list .price-wrap {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popup-dop .dop-list .price {
+    font-family: 'FuturaDemi';
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgb(35, 31, 32);
+}
+.popup-dop .dop-list .dop-add {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(255, 93, 36);
+    background-color: transparent;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-dop .dop-list .dop-add::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 10px;
+    background-color: rgb(255, 93, 36);
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 1px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-dop .dop-list .dop-add::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: rgb(255, 93, 36);
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 5px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup-dop .dop-list .dop-add.active {
+    background-color: rgb(255, 93, 36);
+}
+.popup-dop .dop-list .dop-add.active::before, .popup-dop .dop-list .dop-add.active::after {
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.popup-wine-text .name {
+    font-family: 'FuturaDemi';
+    color: rgb(35, 31, 32);
+    line-height: 1.2;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.popup-wine-text p {
+    display: block;
+    color: rgb(128, 128, 128);
+    line-height: 1.2;
+    font-size: 17px;
+    font-family: 'FuturaFuturisLightC';
+}
+
+
+
 
 
 
@@ -651,6 +1017,14 @@ button:hover {
     }
     .footer .atk-logo {
         margin: 0 auto;
+    }
+    .popup-list li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .popup-dop .dop-list li {
+        width: 33%;
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width: 767px){
@@ -719,5 +1093,23 @@ button:hover {
     }
     .footer-nav .wrap ul li {
         text-align: center;
+    }
+    .popup {
+        padding: 20px;
+    }
+    .popup-wrap .image {
+        width: 100%;
+        height: 300px;
+    }
+    .popup-wrap .text {
+        width: 100%;
+    }
+    .popup-dop .dop-list li {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .popup-dop .dop-list li {
+        width: 100%;
     }
 }
