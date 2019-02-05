@@ -791,7 +791,7 @@ button:hover {
 }
 .popup-wrap .price {
     font-family: 'FuturaDemi';
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.2;
     color: rgb(35, 31, 32);
 }
@@ -818,7 +818,7 @@ button:hover {
 }
 .popup-wrap .popup-price-wine {
     display: block;
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
     font-family: 'FuturaDemi';
     color: rgb(128, 128, 128);
