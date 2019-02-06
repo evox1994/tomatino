@@ -1,0 +1,76 @@
+.b-1 .b-block {
+	padding-top: 70px;
+}
+.b-1 h1 {
+	display: block;
+	text-align: left;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-family: 'DIN Condensed';
+	color: rgb(35, 31, 32);
+	margin-bottom: 60px;
+}
+.b-1 .info {
+	text-align: left;
+	margin-bottom: 50px;
+}
+.b-1 .info .info-name {
+	font-family: 'FuturaDemi';
+	color: rgb(255, 93, 36);
+	font-size: 24px;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+.b-1 .info-list {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.b-1 .info-list li {
+	margin-bottom: 30px;
+	margin-right: 100px;
+}
+.b-1 .info-list li:last-child {
+	margin-right: auto;
+}
+.b-1 .info-list .name {
+	font-family: 'FuturaDemi';
+	line-height: 1.2;
+	font-size: 17px;
+	color: rgb(128, 128, 128);
+	margin-bottom: 5px;
+}
+.b-1 .info-list p {
+	display: block;
+	font-size: 24px;
+	color: rgb(35, 31, 32);
+	line-height: 1.2;
+	font-family: 'FuturaFuturisLightC';
+}
+.b-1 .info-list p a {
+	color: rgb(35, 31, 32);
+}
+.b-1 .map {
+	width: 100%;
+}
+.b-1 .map iframe {
+	width: 100% !important;
+	height: 400px !important;
+}
+
+@media screen and (max-width: 1280px){
+	.b-1 .info {
+		text-align: center;
+	}
+	.b-1 .info-list {
+		display: block;
+	}
+	.b-1 .info-list li {
+		width: 100%;
+		margin: 0 auto 30px;
+	}
+}
