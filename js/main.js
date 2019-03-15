@@ -33,6 +33,7 @@ $(document).ready(function(){
 	});
 
 	$('.fancybox').fancybox();
+	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
 
 	$('.dop-add').click(function(){
 		if ( $(this).hasClass('active') ){
