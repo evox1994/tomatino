@@ -39,7 +39,7 @@
 	display: block;
 	box-sizing: border-box;
 	width: calc(25% - 22.5px);
-	border: 1px solid rgb(227, 228, 227);
+	border: 1px solid transparent;
 	border-radius: 4px;
 	padding: 10px;
 	font-family: 'FuturaDemi';
@@ -52,6 +52,7 @@
 }
 .b-2 .filter li:hover {
 	cursor: pointer;
+	color: rgb(231, 62, 29);
 }
 .b-2 .filter li.active {
 	color: rgb(231, 62, 29);

@@ -59,4 +59,13 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.radio-btn').click(function(){
+		if ( $(this).hasClass('active') ){
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+			$(this).removeClass('error');
+		}
+	});
+
 });

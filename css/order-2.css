@@ -1,0 +1,449 @@
+.header-top-right {
+	display: none;
+}
+.header-top-order {
+	display: inline-block;
+}
+.header-bottom {
+	display: none;
+}
+body {
+	padding-top: 102px;
+}
+
+.b-1 .b-block {
+	padding-top: 70px;
+	padding-bottom: 120px;
+}
+.b-1 h1 {
+	display: block;
+	text-align: left;
+	font-family: 'DIN Condensed';
+	font-size: 48px;
+	color: rgb(35, 31, 32);
+	line-height: 1.2;
+	margin-bottom: 70px;
+}
+.b-1-select {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: flex-start;
+	align-items: stretch;
+	margin-bottom: 50px;
+}
+.b-1-select a {
+	display: block;
+	max-width: 175px;
+	width: 100%;
+	background-color: rgb(248, 248, 248);
+	font-family: "FuturaFuturisLightC";
+	font-size: 17px;
+	color: rgb(56, 58, 58);
+	padding: 13px 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-select a.active {
+	background-color: rgb(255, 93, 36);
+	color: #ffffff;
+	font-family: 'FuturaDemi';
+}
+.b-1 .order-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	box-sizing: border-box;
+}
+.b-1 .order-item {
+	box-sizing: border-box;
+	max-width: 570px;
+	width: 100%;
+}
+.b-1 .order-item.item-info {
+	background-image: url('../i/order-fon.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	max-width: 475px;
+	min-height: 457px;
+	padding: 30px 0;
+	order: 2;
+}
+.b-1 .order-item .title {
+	display: block;
+	font-family: 'FuturaDemi';
+	font-size: 24px;
+	color: rgb(56, 58, 58);
+	line-height: 1.2;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.b-1 .order-item.item-info .title {
+	padding: 0 30px;
+}
+.b-1 .order-item .order-list {
+	padding: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	border-top: 1px solid rgb(227, 228, 227);
+	border-bottom: 1px solid rgb(227, 228, 227);
+	margin-bottom: 30px;
+}
+.b-1 .order-item .order-list li {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.b-1 .order-item .order-list li:last-child {
+	margin-bottom: 0;
+}
+.b-1 .order-item .order-list li p {
+	display: block;
+	font-family: 'FuturaFuturisLightC';
+	font-size: 18px;
+	color: rgb(56, 58, 58);
+	line-height: 1.2;
+}
+.b-1 .order-item .order-list li .price {
+	display: block;
+	font-size: 18px;
+	color: rgb(56, 58, 58);
+	line-height: 1.2;
+	font-family: 'FuturaDemi';
+}
+.b-1 .order-item .sum-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 30px;
+	margin-bottom: 20px;
+}
+.b-1 .order-item .sum-wrap p, .b-1 .order-item .sum-wrap .summa {
+	display: block;
+	font-family: 'FuturaDemi';
+	font-size: 24px;
+	color: rgb(255, 93, 36);
+	line-height: 1.2;
+}
+.b-1 .order-item .delivery-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+.b-1 .order-item .delivery-wrap p, .b-1 .order-item .delivery-wrap .delivery {
+	display: block;
+	font-family: 'FuturaDemi';
+	font-size: 24px;
+	color: rgb(56, 58, 58);
+	line-height: 1.2;
+}
+.b-1 .order-item form {
+	display: none;
+}
+.b-1 .order-item form.active {
+	display: block;
+}
+.b-1 .order-item input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 17px;
+	font-family: "FuturaFuturisLightC";
+	color: rgb(35, 31, 32);
+	text-align: left;
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+	padding: 18px 30px;
+	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .order-item input::-webkit-input-placeholder {color:rgb(35, 31, 32);}
+.b-1 .order-item input::-moz-placeholder          {color:rgb(35, 31, 32);}
+.b-1 .order-item input:-moz-placeholder           {color:rgb(35, 31, 32);}
+.b-1 .order-item input:-ms-input-placeholder      {color:rgb(35, 31, 32);}
+.b-1 .order-item input:focus::-webkit-input-placeholder {color:transparent;}
+.b-1 .order-item input:focus::-moz-placeholder          {color:transparent;}
+.b-1 .order-item input:focus:-moz-placeholder           {color:transparent;}
+.b-1 .order-item input:focus:-ms-input-placeholder      {color:transparent;}
+.b-1 .order-item textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 17px;
+	font-family: "FuturaFuturisLightC";
+	color: rgb(35, 31, 32);
+	text-align: left;
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+	padding: 18px 30px;
+	margin-bottom: 20px;
+	resize: none;
+	height: 100px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .order-item textarea::-webkit-input-placeholder {color:rgb(35, 31, 32);}
+.b-1 .order-item textarea::-moz-placeholder          {color:rgb(35, 31, 32);}
+.b-1 .order-item textarea:-moz-placeholder           {color:rgb(35, 31, 32);}
+.b-1 .order-item textarea:-ms-input-placeholder      {color:rgb(35, 31, 32);}
+.b-1 .order-item textarea:focus::-webkit-input-placeholder {color:transparent;}
+.b-1 .order-item textarea:focus::-moz-placeholder          {color:transparent;}
+.b-1 .order-item textarea:focus:-moz-placeholder           {color:transparent;}
+.b-1 .order-item textarea:focus:-ms-input-placeholder      {color:transparent;}
+.b-1 .order-item .address-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1 .order-item .address-wrap input {
+	width: 23%;
+	text-align: center;
+}
+.b-1 .order-item .address-wrap input.street {
+	width: 74%;
+	text-align: left;
+}
+.b-1 .order-item .form-desc {
+	font-family: 'FuturaFuturisLightC';
+	font-size: 15px;
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.b-1 .order-item .form-desc span {
+	color: rgb(255, 93, 36);
+}
+.b-1 .order-item .form-radio {
+	margin-bottom: 50px;
+}
+.b-1 .order-item .form-radio .radio-wrap {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: left;
+}
+.b-1 .order-item .form-radio .radio-wrap label {
+	display: inline-block;
+	padding: 5px 0 5px 60px;
+	box-sizing: border-box;
+	max-width: 100%;
+	position: relative;
+	font-family: 'FuturaFuturisLightC';
+	font-size: 17px;
+	line-height: 1.2;
+	color: rgb(35, 31, 32);
+}
+.b-1 .order-item .form-radio .radio-wrap label:hover {
+	cursor: pointer;
+}
+.b-1 .order-item .form-radio .radio-wrap label span {
+	display: block;
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 0;
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+}
+.b-1 .order-item .form-radio .radio-wrap input {
+	display: none;
+}
+.b-1 .order-item .form-radio .radio-wrap input:checked + label span {
+	background-color: rgb(255, 93, 36);
+	border-color: rgb(255, 93, 36);
+}
+.b-1 .order-item .form-radio .radio-wrap input:checked + label span::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	top: 11px;
+	left: 5px;
+	background-color: #ffffff;
+	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.b-1 .order-item .form-radio .radio-wrap input:checked + label span::after {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 2px;
+	position: absolute;
+	top: 18px;
+	left: 11px;
+	background-color: #ffffff;
+	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.b-1 .order-item .form-radio .radio-wrap input:checked + label + .nal-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap {
+	display: none;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-left: 60px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap p {
+	display: block;
+	font-size: 17px;
+	font-family: 'FuturaFuturisLightC';
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	margin-top: 18px;
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap input {
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap .nal-btn {
+	display: inline-block;
+	font-size: 15px;
+	font-family: 'FuturaFuturisLightC';
+	color: rgb(56, 58, 58);
+	line-height: 1.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap .nal-btn:hover {
+	cursor: pointer;
+	color: rgb(255, 93, 36);
+}
+.b-1 .order-item .form-radio .radio-wrap .nal-wrap .nal-btn.active {
+	display: none;
+}
+.b-1 .order-item .form-submit {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1 .order-item .form-submit button {
+	display: block;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(255, 93, 36);
+	max-width: 220px;
+	width: 100%;
+	border: 0;
+	color: #ffffff;
+	font-family: 'FuturaDemi';
+	font-size: 17px;
+	padding: 12px 20px;
+	order: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	body {
+		padding-top: 111px;
+	}
+	.b-1 .order-wrap {
+		flex-wrap: wrap;
+	}
+	.b-1 .order-item.item-info {
+		order: 0;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 767px){
+	.header-bottom {
+		display: block;
+	}
+	.b-1 .order-wrap {
+		display: block;
+	}
+	.b-1 .order-item {
+		margin: 0 auto;
+	}
+	.b-1 .order-item .address-wrap input {
+		width: 49%;
+	}
+	.b-1 .order-item .address-wrap input.street {
+		width: 100%;
+	}
+	.b-1 .order-item .form-radio .radio-wrap .nal-wrap {
+		padding-left: 0;
+		padding-bottom: 20px;
+	}
+	.b-1 .order-item .form-radio .radio-wrap input:checked + label + .nal-wrap {
+		display: block;
+	}
+	.b-1 .order-item .form-radio .radio-wrap .nal-wrap p {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.b-1 .order-item .form-submit {
+		display: block;
+	}
+	.b-1 .order-item .form-submit button {
+		margin: 0 auto 15px;
+		max-width: 270px;
+	}
+}
