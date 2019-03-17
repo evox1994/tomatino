@@ -1,0 +1,226 @@
+.b-1 .b-block {
+	padding-top: 65px;
+	padding-bottom: 100px;
+}
+.b-1 h1 {
+	display: block;
+	font-family: 'DIN Condensed';
+	font-size: 48px;
+	text-align: left;
+	margin-bottom: 65px;
+	color: rgb(35, 31, 32);
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+.b-1-wrap {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: flex-start;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1-wrap .form-wrap {
+	max-width: 570px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.b-1-wrap .form-wrap input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 17px;
+	font-family: "FuturaFuturisLightC";
+	color: rgb(35, 31, 32);
+	text-align: left;
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+	padding: 18px 30px;
+	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-wrap .form-wrap input::-webkit-input-placeholder {color:rgb(35, 31, 32);}
+.b-1-wrap .form-wrap input::-moz-placeholder          {color:rgb(35, 31, 32);}
+.b-1-wrap .form-wrap input:-moz-placeholder           {color:rgb(35, 31, 32);}
+.b-1-wrap .form-wrap input:-ms-input-placeholder      {color:rgb(35, 31, 32);}
+.b-1-wrap .form-wrap input:focus::-webkit-input-placeholder {color:transparent;}
+.b-1-wrap .form-wrap input:focus::-moz-placeholder          {color:transparent;}
+.b-1-wrap .form-wrap input:focus:-moz-placeholder           {color:transparent;}
+.b-1-wrap .form-wrap input:focus:-ms-input-placeholder      {color:transparent;}
+.b-1-wrap .form-wrap .buttons {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1-wrap .form-wrap .buttons .btn-wrap {
+	max-width: 255px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.b-1-wrap .form-wrap .buttons button {
+	display: block;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(255, 93, 36);
+	width: 100%;
+	border: 0;
+	color: #ffffff;
+	font-family: 'FuturaDemi';
+	font-size: 17px;
+	padding: 12px 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-wrap .form-wrap .buttons .reg-btn {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid rgb(227, 228, 227);
+	border-radius: 4px;
+	padding: 12px 20px;
+	font-family: 'FuturaFuturisLightC';
+	font-size: 17px;
+	color: rgb(122, 128, 128);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-wrap .form-wrap .buttons .vost-btn {
+	display: inline-block;
+	max-width: 100%;
+	font-size: 15px;
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	font-family: 'FuturaFuturisLightC';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-wrap .form-wrap .buttons .vost-btn:hover {
+	color: rgb(255, 93, 36);
+}
+.b-1-wrap .form-wrap .form-submit {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-1-wrap .form-wrap .form-submit button {
+	display: block;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(255, 93, 36);
+	max-width: 220px;
+	width: 100%;
+	border: 0;
+	color: #ffffff;
+	font-family: 'FuturaDemi';
+	font-size: 17px;
+	padding: 12px 20px;
+	order: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-wrap .form-wrap .form-desc {
+	font-family: 'FuturaFuturisLightC';
+	font-size: 15px;
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.b-1-wrap .form-wrap .form-desc span {
+	color: rgb(255, 93, 36);
+}
+.b-1-wrap .info-list {
+	display: block;
+	max-width: 350px;
+	width: 100%;
+}
+.b-1-wrap .info-list li {
+	display: block;
+	box-sizing: border-box;
+	padding-left: 90px;
+	font-family: 'FuturaDemi';
+	font-size: 17px;
+	color: rgb(122, 128, 128);
+	line-height: 1.2;
+	text-align: left;
+	position: relative;
+	margin-bottom: 80px;
+}
+.b-1-wrap .info-list li:last-child {
+	margin-bottom: 0;
+}
+.b-1-wrap .info-list li span {
+	font-family: 'FuturaFuturisLightC';
+	color: rgb(35, 31, 32);
+	font-size: 24px;
+}
+.b-1-wrap .info-list li img {
+	display: block;
+	max-width: 60px;
+	max-height: 55px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-1-wrap {
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 767px){
+	.b-1-wrap {
+		display: block;
+	}
+	.b-1-wrap .form-wrap {
+		margin: 0 auto 80px;
+	}
+	.b-1-wrap .form-wrap .buttons {
+		display: block;
+	}
+	.b-1-wrap .form-wrap .buttons .btn-wrap {
+		max-width: 100%;
+	}
+	.b-1-wrap .form-wrap .form-submit {
+		display: block;
+	}
+	.b-1-wrap .form-wrap .form-submit button {
+		margin: 0 auto 15px;
+		max-width: 270px;
+	}
+	.b-1-wrap .info-list {
+		margin: 0 auto;
+	}
+	.b-1-wrap .info-list li {
+		margin-bottom: 50px;
+	}
+}
