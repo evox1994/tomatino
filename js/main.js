@@ -1,6 +1,8 @@
 $(document).ready(function(){
+	var summa = Number(localStorage.getItem("tomatino-summa"));
+	var HH = $('.header').outerHeight();
 
-	var HH = $('.header').outerHeight();	
+	$('.header-basket span b').text(summa);
 
 	function scrollHeader(){
 		if ( $(window).width() > 767 ) {
@@ -34,15 +36,6 @@ $(document).ready(function(){
 
 	$('.fancybox').fancybox();
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
-
-	$('.dop-add').click(function(){
-		if ( $(this).hasClass('active') ){
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-		return false;
-	});
 
 	$('.close-btn').click(function(){
 		$('.mobile-btn').removeClass('active');

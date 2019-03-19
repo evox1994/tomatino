@@ -269,7 +269,11 @@
 	cursor: pointer;
 }
 .b-3 .catalog .col {
+	display: none;
 	margin-bottom: 20px;
+}
+.b-3 .catalog .col.active {
+	display: block;
 }
 .b-3 .catalog .col .less, .b-3 .catalog .col .more {
 	display: inline-block;

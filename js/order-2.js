@@ -1,4 +1,17 @@
 $(document).ready(function(){
+	var orderEl = {}; //prodId,price,col,dob
+	var orderArr = JSON.parse(localStorage.getItem("tomatino-order"));
+	var summa = Number(localStorage.getItem("tomatino-summa"));
+	var order = [];
+
+	if ( orderArr ) {
+		for (var i = 0; i < orderArr.length; i++) {
+			order.push(orderArr[i]);
+
+			$('.order-list').append('<li id="'+orderArr[i].prodId+'"><p>'+orderArr[i].name+'</p><div class="price"><span>'+(Number(orderArr[i].price)*Number(orderArr[i].col))+'</span> руб.</div></li>');
+		}
+	}
+	$('.order-wrap .sum-wrap .summa span').text(summa);
 
 	$('.b-1-select a').click(function(){
 		var el = $(this).attr('href');

@@ -293,6 +293,83 @@ body {
     text-align: left;
     margin-bottom: 10px;
 }
+.b-1 .dobavki-list .dop-col {
+	display: none;
+	margin-bottom: 10px;
+}
+.b-1 .dobavki-list .dop-col.active {
+	display: block;
+}
+.b-1 .dobavki-list .dop-col .dop-less, .b-1 .dobavki-list .dop-col .dop-more {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	border: 1px solid #7a8080;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-1 .dobavki-list .dop-col .dop-less:hover, .b-1 .dobavki-list .dop-col .dop-more:hover {
+	cursor: pointer;
+	border-color: rgb(255, 93, 36);
+}
+.b-1 .dobavki-list .dop-col .dop-less::before, .b-1 .dobavki-list .dop-col .dop-more::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	background-color: #7a8080;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-1 .dobavki-list .dop-col .dop-less:hover:before, .b-1 .dobavki-list .dop-col .dop-more:hover:before {
+	background-color: rgb(255, 93, 36);
+}
+.b-1 .dobavki-list .dop-col .dop-more::after {
+	content: '';
+	display: block;
+	height: 10px;
+	width: 2px;
+	background-color: #7a8080;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-1 .dobavki-list .dop-col .dop-more:hover:after {
+	background-color: rgb(255, 93, 36);
+}
+.b-1 .dobavki-list .dop-col p {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'FuturaDemi';
+	color: #7a8080;
+	line-height: 1.2;
+	width: 80px;
+	margin: 0 5px;
+	font-size: 24px;
+}
 .b-1 .dobavki-list .price-wrap {
     display: flex;
     display: -ms-flex;

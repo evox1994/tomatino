@@ -490,6 +490,9 @@ button:hover {
     font-size: 15px;
     font-family: 'FuturaDemi';
 }
+.header-basket span b {
+    font-weight: normal;
+}
 .header-basket a {
     display: inline-block;
     vertical-align: middle;
@@ -737,7 +740,11 @@ button:hover {
     transform: translateY(-50%);
 }
 .popup-wrap .col {
+    display: none;
     margin-bottom: 50px;
+}
+.popup-wrap .col.active {
+    display: block;
 }
 .popup-wrap .col .less, .popup-wrap .col .more {
     display: inline-block;
