@@ -11,7 +11,11 @@ $(document).ready(function(){
 			$('.order-list').append('<li data-prodid="'+orderArr[i].prodId+'"><div class="left-part"><div class="name">'+orderArr[i].name+'</div></div><div class="col"><div class="less"></div><p>'+orderArr[i].col+'</p><div class="more"></div></div><div class="price"><span>'+(Number(orderArr[i].price)*Number(orderArr[i].col))+'</span> Руб.</div></li>');
 			if (orderArr[i].dob.length){
 				for (var j = 0; j < orderArr[i].dob.length; j++){
-					$('#'+orderArr[i].prodId).find('.left-part').append('<div class="dop" data-dobid="'+orderArr[i].dob[j].dobId+'"><div class="dop-del"></div>'+orderArr[i].dob[j].name+'</div>');
+					$('.order-list li').each(function(){
+						if ( $(this).attr('data-prodid') == orderArr[i].prodId ){
+							$(this).find('.left-part').append('<div class="dop" data-dobid="'+orderArr[i].dob[j].dobId+'"><div class="dop-del"></div>'+orderArr[i].dob[j].name+'</div>');
+						}
+					});
 				}
 			}
 			$('.dobavki-list li').each(function(){
