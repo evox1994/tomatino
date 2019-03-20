@@ -501,7 +501,7 @@
 		top: calc(50% - 35px);
 	}
 	.b-1 h2 {
-		font-size: 48px;
+		font-size: 38px;
 	}
 	.b-1 .b-block {
 		padding-top: 90px;
@@ -536,5 +536,15 @@
 	}
 	.b-3 .catalog .add-ingr {
 		text-align: center;
+	}
+}
+@media screen and (max-width: 500px){
+	.b-1 h2 {
+		font-size: 28px;
+		max-width: 200px;
+	}
+	.b-1 .b-block {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }
