@@ -1,3 +1,7 @@
+.header.active {
+	position: absolute;
+	border: 0;
+}
 .header-top-right {
 	display: none;
 }
@@ -175,6 +179,9 @@ body {
 	border-radius: 4px;
 	padding: 18px 30px;
 	margin-bottom: 20px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -188,6 +195,9 @@ body {
 .b-1 .order-item input:focus::-moz-placeholder          {color:transparent;}
 .b-1 .order-item input:focus:-moz-placeholder           {color:transparent;}
 .b-1 .order-item input:focus:-ms-input-placeholder      {color:transparent;}
+.b-1 .order-item input:focus, .b-1 .order-item input:hover {
+	border-color: rgb(255, 93, 36);
+}
 .b-1 .order-item textarea {
 	display: block;
 	box-sizing: border-box;
@@ -202,6 +212,9 @@ body {
 	margin-bottom: 20px;
 	resize: none;
 	height: 100px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -215,6 +228,9 @@ body {
 .b-1 .order-item textarea:focus::-moz-placeholder          {color:transparent;}
 .b-1 .order-item textarea:focus:-moz-placeholder           {color:transparent;}
 .b-1 .order-item textarea:focus:-ms-input-placeholder      {color:transparent;}
+.b-1 .order-item textarea:focus, .b-1 .order-item textarea:hover {
+	border-color: rgb(255, 93, 36);
+}
 .b-1 .order-item .address-wrap {
 	display: flex;
 	display: -webkit-flex;

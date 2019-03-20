@@ -13,7 +13,7 @@ $(document).ready(function(){
 	}
 	$('.order-wrap .sum-wrap .summa span').text(summa);
 
-	$('.b-1-select a').click(function(){
+	$('.b-1-select a').on('click touchstart',function(){
 		var el = $(this).attr('href');
 		$('.b-1-select a').removeClass('active');
 		$('.b-1 .order-item form').removeClass('active');
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.nal-btn').click(function(){
+	$('.nal-btn').on('click touchstart',function(){
 		$(this).addClass('active');
 		$(this).parents('div').find('input').val('Без сдачи');
 	});

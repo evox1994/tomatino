@@ -37,7 +37,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.col .more').click(function(){
+	$('.col .more').on('click touchstart',function(){
 		var prod = $(this).parents('.pr').find('.add-btn').attr('href');
 		var prod_id = $(prod).attr('id');
 		var coli, qwe;
@@ -72,7 +72,7 @@ $(document).ready(function(){
 		orderEl.dob = [];
 	});
 
-	$('.col .less').click(function(){
+	$('.col .less').on('click touchstart',function(){
 		var prod = $(this).parents('.pr').find('.add-btn').attr('href');
 		var prod_id = $(prod).attr('id');
 		var coli, qwe;
@@ -120,7 +120,7 @@ $(document).ready(function(){
 		localStorage.setItem("tomatino-summa",summa);
 	});
 
-	$('.add-btn').click(function(){
+	$('.add-btn').on('click touchstart',function(){
 		var nal = false;
 		var prod = $(this).attr('href');
 		var prod_id = $(prod).attr('id');
@@ -175,7 +175,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.dop-add').click(function(){
+	$('.dop-add').on('click touchstart',function(){
 		var nal = false;
 		var prod = $(this).attr('href');
 		var prod_id = $(prod).attr('id');
@@ -292,7 +292,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.fancybox-a').click(function(){
+	$('.fancybox-a').on('click touchstart',function(){
 		var el = $(this).attr('href');
 		var popup = $(el).attr('href');
 		var coli = $(this).parents('.pr').find('.col p').text();
@@ -357,7 +357,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.fancybox-a-wine').click(function(){
+	$('.fancybox-a-wine').on('click touchstart',function(){
 		var el = $(this).attr('href');
 		var popup = $(el).attr('href');
 		var name = $(this).parents('li').find('.name').text();
