@@ -139,6 +139,7 @@ body {
 	top: calc(50% - 10px);
 	left: 0;
 	background-color: rgb(255, 93, 36);
+	cursor: pointer;
 }
 .b-1 .order-list .dop .dop-del:hover {
 	cursor: pointer;
@@ -184,6 +185,7 @@ body {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-1 .order-list .col .less:hover, .b-1 .order-list .col .more:hover {
 	cursor: pointer;
@@ -325,6 +327,7 @@ body {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-1 .dobavki-list .dop-col .dop-less:hover, .b-1 .dobavki-list .dop-col .dop-more:hover {
 	cursor: pointer;
@@ -412,6 +415,7 @@ body {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-1 .dobavki-list .dobavki-add::before {
     content: '';
@@ -523,6 +527,13 @@ body {
 	}
 	.b-1 .result-wrap {
 		display: block;
+		width: 100%;
+		z-index: 90;
+		background-color: #ececec;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding: 15px 0;
 	}
 	.b-1 .result-wrap .sum-wrap {
 		margin-bottom: 15px;

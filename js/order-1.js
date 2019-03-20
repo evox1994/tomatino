@@ -29,7 +29,7 @@ $(document).ready(function(){
 	}
 	$('.result-wrap .summa span').text(summa);
 
-	$('body').on('click touchstart','.more',function(){
+	$('body').on('click','.more',function(){
 		var prod_id = $(this).parents('li').data('prodid');
 		var prod = '#'+prod_id;
 		var coli, qwe;
@@ -62,7 +62,7 @@ $(document).ready(function(){
 		localStorage.setItem("tomatino-summa",summa);
 	});
 
-	$('body').on('click touchstart','.less',function(){
+	$('body').on('click','.less',function(){
 		var prod_id = $(this).parents('li').data('prodid');
 		var prod = '#'+prod_id;
 		var coli, qwe;
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		localStorage.setItem("tomatino-summa",summa);
 	});
 
-	$('body').on('click touchstart','.dop-del',function(){
+	$('body').on('click','.dop-del',function(){
 		var prod_id = $(this).parents('li').data('prodid');
 		var prod = '#'+prod_id;
 		var coli, qwe;
@@ -130,7 +130,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.dobavki-add').on('click touchstart',function(){
+	$('.dobavki-add').on('click',function(){
 		var prod_id = $(this).parents('li').attr('id');
 		var prod = '#'+prod_id;
 		var coli, qwe;
@@ -177,7 +177,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('body').on('click touchstart','.dop-more',function(){
+	$('body').on('click','.dop-more',function(){
 		var prod_id = $(this).parents('li').attr('id');
 		var prod = '#'+prod_id;
 		var coli, qwe;
@@ -214,7 +214,7 @@ $(document).ready(function(){
 		localStorage.setItem("tomatino-summa",summa);
 	});
 
-	$('body').on('click touchstart','.dop-less',function(){
+	$('body').on('click','.dop-less',function(){
 		var prod_id = $(this).parents('li').attr('id');
 		var prod = '#'+prod_id;
 		var coli, qwe;

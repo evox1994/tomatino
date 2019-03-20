@@ -251,6 +251,7 @@
 	position: absolute;
 	top: 5px;
 	right: 0;
+	cursor: pointer;
 }
 .b-3 .catalog .text .more-i img {
 	display: block;
@@ -288,6 +289,7 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-3 .catalog .col .less:hover, .b-3 .catalog .col .more:hover {
 	cursor: pointer;
@@ -377,6 +379,7 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-3 .catalog .add-btn:hover {
 	color: #ffffff;
@@ -397,6 +400,7 @@
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .b-3 .catalog .more-btn:hover {
 	color: #ffffff;
