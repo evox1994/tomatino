@@ -544,6 +544,9 @@ body {
 	.b-1 .result-wrap .result-btn {
 		margin: 0 auto;
 	}
+	.footer .b-block {
+		padding-bottom: 160px;
+	}
 }
 @media screen and (max-width: 500px){
 	.b-1 .dobavki-list li {
