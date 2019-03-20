@@ -849,6 +849,7 @@ button:hover {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .popup-wrap .add-btn:hover {
     color: #ffffff;
