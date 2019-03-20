@@ -1245,12 +1245,25 @@ button:hover {
     .popup-wrap .text {
         width: 100%;
     }
+    .popup-wrap .text .name {
+        text-align: center;
+    }
     .popup-dop .dop-list li {
         width: 50%;
+    }
+    .popup-list {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 500px){
     .popup-dop .dop-list li {
         width: 100%;
+    }
+    .popup-wrap .price-wrap {
+        display: block;
+        text-align: center;
+    }
+    .popup-wrap .price {
+        margin-bottom: 10px;
     }
 }

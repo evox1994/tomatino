@@ -503,14 +503,24 @@
 	.b-1 h2 {
 		font-size: 48px;
 	}
+	.b-1 .b-block {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
 	.b-2-text {
-		display: block;
-		width: 100%;
-		margin: 0 auto 20px;
-		padding: 30px 20px;
+		vertical-align: middle;
+		width: calc(100% - 150px);
+		margin: 0 auto;
+		padding: 80px 20px;
+		text-align: left;
+		font-size: 12px;
 	}
 	.b-2-border {
-		display: none;
+		width: calc(100% - 50px);
+	}
+	.b-2-image {
+		vertical-align: middle;
+		width: 140px;
 	}
 	.b-3-list {
 		margin-bottom: 40px;

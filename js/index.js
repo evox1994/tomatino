@@ -303,7 +303,7 @@ $(document).ready(function(){
 		var dobavkaMas = [];
 
 		$(popup).find('.popup-wrap .add-btn').attr('href','#'+prod_id);
-		$(popup).find('.name').text(name);
+		$(popup).find('.popup-wrap .name').text(name);
 		$(popup).find('.op').text(op);
 		$(popup).find('.col p').text(coli);
 		$(popup).find('.popup-wrap .price span').text(price);
@@ -363,7 +363,7 @@ $(document).ready(function(){
 		var name = $(this).parents('li').find('.name').text();
 		var op = $(this).parents('li').find('.text p').text();
 
-		$(popup).find('.name').text(name);
+		$(popup).find('.popup-wrap .name').text(name);
 		$(popup).find('.op').text(op);
 		$(el).click();
 		return false;

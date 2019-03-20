@@ -175,7 +175,7 @@ $(document).ready(function(){
 			$('.order-list').append('<li data-prodid="'+order[numt].prodId+'"><div class="left-part"><div class="name">'+order[numt].name+'</div></div><div class="col"><div class="less"></div><p>'+order[numt].col+'</p><div class="more"></div></div><div class="price"><span>'+(Number(order[numt].price)*Number(order[numt].col))+'</span> Руб.</div></li>');
 			/*$('.order-list li').each(function(){
 				if ( $(this).attr('data-prodid') == order[numt].prodId ){
-					$(window).scrollTop( st - $(this).parents('li').outerHeight() );
+					$('body,html').animate({scrollTop: st + $(this).parents('li').outerHeight()},500);
 				}
 			});*/
 		}
