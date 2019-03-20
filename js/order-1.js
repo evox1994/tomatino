@@ -68,6 +68,7 @@ $(document).ready(function(){
 		var coli, qwe;
 		var numt = 0;
 		var clone = {};
+		var st = $(window).scrollTop();
 
 		for (var i = 0; i < order.length; i++) {
 			if ( order[i].prodId == prod_id ) {
@@ -92,6 +93,7 @@ $(document).ready(function(){
 			$('.dobavki-list '+prod).find('.dop-col p').text(order[numt].col);
 		} else {
 			summa = summa - Number(order[numt].price);
+			//$(window).scrollTop( st + $(this).parents('li').outerHeight() );
 			$(this).parents('li').remove();
 			$('.dobavki-list '+prod).find('.dop-col').removeClass('active');
 			$('.dobavki-list '+prod).find('.dobavki-add').removeClass('active');
@@ -137,6 +139,7 @@ $(document).ready(function(){
 		var numt = 0;
 		var clone = {};
 		var nal = false;
+		var st = $(window).scrollTop();
 
 		for (var i = 0; i < order.length; i++) {
 			if ( order[i].prodId == prod_id ) {
@@ -152,6 +155,7 @@ $(document).ready(function(){
 			summa = summa - Number(order[numt].price)*Number(order[numt].col);
 			$('.order-list li').each(function(){
 				if ( $(this).attr('data-prodid') == order[numt].prodId ){
+					//$(window).scrollTop( st + $(this).parents('li').outerHeight() );
 					$(this).remove();
 				}
 			});
@@ -169,6 +173,11 @@ $(document).ready(function(){
 			orderEl = {};
 			$(this).parents('li').find('.dop-col p').text('1');
 			$('.order-list').append('<li data-prodid="'+order[numt].prodId+'"><div class="left-part"><div class="name">'+order[numt].name+'</div></div><div class="col"><div class="less"></div><p>'+order[numt].col+'</p><div class="more"></div></div><div class="price"><span>'+(Number(order[numt].price)*Number(order[numt].col))+'</span> Руб.</div></li>');
+			/*$('.order-list li').each(function(){
+				if ( $(this).attr('data-prodid') == order[numt].prodId ){
+					$(window).scrollTop( st - $(this).parents('li').outerHeight() );
+				}
+			});*/
 		}
 		$('.result-wrap .summa span').text(summa);
 		qwe = JSON.stringify(order);
@@ -261,6 +270,10 @@ $(document).ready(function(){
 		qwe = JSON.stringify(order);
 		localStorage.setItem("tomatino-order",qwe);
 		localStorage.setItem("tomatino-summa",summa);
+	});
+
+	$('.order-list').on('change',function(){
+		alert();
 	});
 
 });

@@ -430,7 +430,16 @@ body {
 	}
 }
 @media screen and (max-width: 767px){
+	body {
+		padding-top: 69px;
+	}
+	.header {
+		display: none;
+	}
 	.header-bottom {
+		display: block;
+	}
+	.header-back-btn {
 		display: block;
 	}
 	.b-1 .order-wrap {
