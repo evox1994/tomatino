@@ -16,6 +16,23 @@ $(document).ready(function(){
 	orderEl.dob = [];
 	dobMas.dob = [];
 
+	if (location.hash){
+		setTimeout(function(){
+			$('body,html').animate({scrollTop: $(location.hash).offset().top - 70},800);
+		}, 500);
+	}
+
+	$('.scroll-btn').click(function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top - 70;
+		$('html,body').animate({scrollTop: des},800);
+		$('.mobile-btn').removeClass('active');
+		$('.mobile-menu').removeClass('active');
+		$('body').removeClass('active');
+		location.hash = el;
+		return false;
+	});
+
 	$('.b-1-slider').slick({
 		dots: true,
 		fade: true,
