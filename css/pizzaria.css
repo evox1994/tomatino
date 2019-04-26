@@ -60,14 +60,18 @@
 }
 .b-2-text {
 	display: block;
-	font-family: 'FuturaDemi';
+	font-family: 'DIN Condensed';
 	line-height: 1.2;
-	font-size: 24px;
+	font-size: 40px;
+	text-transform: uppercase;
 	color: rgb(122, 128, 128);
 	margin-bottom: 60px;
 }
 .b-2-text a {
 	color: #000000;
+}
+.b-2-text span {
+	font-size: 34px;
 }
 .b-2 .info-list {
 	display: flex;
@@ -148,7 +152,9 @@
 	overflow: hidden;
 	box-sizing: border-box;
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto 12px;
+	padding-bottom: 48px;
+	min-height: 200px;
 	text-align: left;
 }
 .b-3-list li:nth-child(odd){
@@ -160,8 +166,9 @@
 .b-3-list li img {
 	display: block;
 	max-width: 380px;
+	max-height: 200px;
 	position: absolute;
-	top: 0;
+	top: 68px;
 }
 .b-3-list li:nth-child(odd) img{
 	left: 0;
@@ -170,10 +177,11 @@
 	right: 0;
 }
 .b-3-list li .name {
-	font-family: 'FuturaDemi';
+	font-family: 'DIN Condensed';
 	color: #000000;
-	font-size: 24px;
+	font-size: 40px;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 .b-3-list li p {
 	display: block;
