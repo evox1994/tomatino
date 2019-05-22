@@ -160,6 +160,7 @@
 	display: block;
 	box-sizing: border-box;
 	padding-left: 90px;
+	padding-right: 24px;
 	font-family: 'FuturaDemi';
 	font-size: 17px;
 	color: rgb(122, 128, 128);
@@ -187,6 +188,20 @@
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+.b-1-wrap .info-list .more-i {
+	display: block;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.b-1-wrap .info-list .more-i img {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 

@@ -135,7 +135,7 @@
 	color: rgb(35, 31, 32);
 	text-align: left;
 	line-height: 1.2;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 .b-3-list {
 	display: flex;
@@ -146,18 +146,18 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 .b-3-list li {
 	box-sizing: border-box;
 	padding: 0 5px;
-	width: 33%;
+	width: 25%;
 }
 .b-3-list li span {
 	position: relative;
 	font-family: 'FuturaDemi';
 	display: inline-block;
-	padding-left: 80px;
+	padding-left: 60px;
 	font-size: 17px;
 	color: rgb(35, 31, 32);
 	line-height: 1.2;
@@ -165,7 +165,7 @@
 .b-3-list li span img {
 	display: block;
 	position: absolute;
-	max-width: 60px;
+	max-width: 50px;
 	left: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
