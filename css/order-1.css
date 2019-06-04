@@ -518,21 +518,74 @@ body {
 	}
 	.header-back-btn {
 		display: block;
+		font-size: 14px;
+	}
+	.b-1 .b-block {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.b-1 .promo-block {
+		margin-bottom: 30px;
 	}
 	.b-1 .promo-block input {
 		display: block;
 		margin: 0 0 10px;
+		font-size: 14px;
+	}
+	.b-1 .promo-block button {
+		font-size: 14px;
+	}
+	.b-1 .title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.b-1 .order-list {
+		margin-bottom: 30px;
+	}
+	.b-1 .order-list li {
+		margin-bottom: 30px;
 	}
 	.b-1 .order-list .left-part {
 		max-width: 100%;
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.b-1 .order-list .name {
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	.b-1 .order-list .dop {
+		font-size: 12px;
+	}
+	.b-1 .order-list .col p {
+		font-size: 16px;
+	}
 	.b-1 .order-list .price {
 		width: auto;
+		font-size: 18px;
+	}
+	.b-1 .dobavki-title {
+		font-size: 18px;
+	}
+	.b-1 .dobavki-list {
+		margin-bottom: 0;
 	}
 	.b-1 .dobavki-list li {
 		width: 50%;
+	}
+	.b-1 .dobavki-list .image {
+		height: 100px;
+		margin-bottom: 10px;
+	}
+	.b-1 .dobavki-list .dobavki-name {
+		font-size: 14px;
+	}
+	.b-1 .dobavki-list .dobavki-info {
+		font-size: 13px;
 	}
 	.b-1 .result-wrap {
 		display: block;
@@ -547,17 +600,27 @@ body {
 	.b-1 .result-wrap .sum-wrap {
 		margin-bottom: 15px;
 	}
+	.b-1 .result-wrap .sum-wrap p {
+		font-size: 14px;
+	}
 	.b-1 .result-wrap .sum-wrap p, .b-1 .result-wrap .sum-wrap .summa {
 		text-align: center;
 	}
+	.b-1 .result-wrap .sum-wrap .summa {
+		font-size: 16px;
+	}
 	.b-1 .result-wrap .result-btn {
 		margin: 0 auto;
+		font-size: 14px;
 	}
 	.footer .b-block {
 		padding-bottom: 160px;
 	}
 }
 @media screen and (max-width: 500px){
+	.b-1 .dobavki-list {
+		display: block;
+	}
 	.b-1 .dobavki-list li {
 		width: 100%;
 	}

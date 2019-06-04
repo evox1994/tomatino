@@ -213,29 +213,58 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1 .b-block {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
 	.b-1-wrap {
 		display: block;
 	}
 	.b-1-wrap .form-wrap {
-		margin: 0 auto 80px;
+		margin: 0 auto 30px;
+	}
+	.b-1-wrap .form-wrap input {
+		padding: 18px 20px;
+		font-size: 14px;
+	}
+	.b-1-wrap .form-wrap .form-desc {
+		font-size: 14px;
 	}
 	.b-1-wrap .form-wrap .buttons {
 		display: block;
 	}
 	.b-1-wrap .form-wrap .buttons .btn-wrap {
 		max-width: 100%;
+		margin-bottom: 10px;
+	}
+	.b-1-wrap .form-wrap .buttons button, .b-1-wrap .form-wrap .buttons .reg-btn, .b-1-wrap .form-wrap .buttons .vost-btn {
+		font-size: 14px;
 	}
 	.b-1-wrap .form-wrap .form-submit {
 		display: block;
 	}
 	.b-1-wrap .form-wrap .form-submit button {
-		margin: 0 auto 15px;
+		margin: 0 auto 10px;
 		max-width: 270px;
+		font-size: 14px;
 	}
 	.b-1-wrap .info-list {
 		margin: 0 auto;
+		max-width: 250px;
 	}
 	.b-1-wrap .info-list li {
-		margin-bottom: 50px;
+		font-size: 14px;
+		margin-bottom: 15px;
+		padding-left: 50px;
+	}
+	.b-1-wrap .info-list li img {
+		max-width: 40px;
+	}
+	.b-1-wrap .info-list li span {
+		font-size: 16px;
 	}
 }

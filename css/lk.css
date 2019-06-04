@@ -195,17 +195,34 @@
 	}
 }
 @media screen and (max-width: 767px){
-	.b-1 .personal-info {
-		display: block;
+	.b-1 .b-block {
+		padding-top: 30px;
+		padding-bottom: 40px;
 	}
-	.b-1 .personal-info .input-wrap {
-		width: 100%;
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.b-1 .title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.b-1 .personal-info {
+		margin-bottom: 10px;
+	}
+	.b-1 .personal-info .input-wrap p {
+		font-size: 12px;
+	}
+	.b-1 .personal-info .input-wrap input {
+		font-size: 14px;
+		padding: 18px 20px;
 	}
 	.b-1 .bonus-block {
 		display: block;
+		margin-bottom: 30px;
 	}
 	.b-1 .bonus-block .bonus-img {
-		margin: 0 auto 20px;
+		margin: 0 auto 15px;
 	}
 	.b-1 .bonus-block .bonus-text {
 		display: block;
@@ -220,11 +237,42 @@
 	.b-1 .bonus-block .bonus-text .bonus-item {
 		margin-bottom: 20px;
 	}
+	.b-1 .bonus-block .bonus-text p {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	.b-1 .bonus-block .bonus-text .summa {
+		font-size: 20px;
+	}
 	.b-1 .bonus-block .bonus-text .bonus-item:last-child {
 		margin-bottom: 0;
 	}
 	.b-1 .bonus-block .bonus-text .bonus-wrap {
 		width: 100px;
 		margin: 0 auto;
+	}
+	.b-1 .bonus-block .bonus-text .bonus-wrap span {
+		font-size: 20px;
+	}
+	.b-1 .discount-list li {
+		padding-left: 50px;
+		margin-bottom: 15px;
+	}
+	.b-1 .discount-list li img {
+		max-width: 40px;
+	}
+	.b-1 .discount-list li p {
+		font-size: 14px;
+	}
+	.b-1 .discount-list li p span {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 450px){
+	.b-1 .personal-info {
+		display: block;
+	}
+	.b-1 .personal-info .input-wrap {
+		width: 100%;
 	}
 }

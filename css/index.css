@@ -500,7 +500,7 @@
 	.b-1-slider .slick-arrow {
 		width: 30px;
 		height: 30px;
-		top: calc(50% - 35px);
+		top: calc(50% - 15px);
 	}
 	.b-1 h2 {
 		font-size: 38px;
@@ -524,25 +524,71 @@
 		vertical-align: middle;
 		width: 140px;
 	}
+	.b-3 h2 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
 	.b-3-list {
-		margin-bottom: 40px;
+		margin-bottom: 0;
 	}
 	.b-3-list li {
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 		text-align: left;
+	}
+	.b-3-list li span {
+		font-size: 12px;
+	}
+	.b-3-list li span img {
+		max-height: 40px;
 	}
 	.b-3 .catalog li {
 		width: 100%;
 		border-color: rgb(227, 228, 227);
 	}
+	.b-3 .catalog .image {
+		height: 150px;
+	}
+	.b-3 .catalog .text .name {
+		font-size: 16px;
+	}
+	.b-3 .catalog .text p {
+		font-size: 12px;
+	}
 	.b-3 .catalog .add-ingr {
+		font-size: 12px;
 		text-align: center;
+	}
+	.b-3 .catalog .price {
+		font-size: 16px;
+	}
+	.b-3 .catalog .add-btn {
+		font-size: 14px;
+	}
+	.b-4 .b-block {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.b-4 h2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.b-4-list {
+		margin-bottom: 30px;
+	}
+	.b-4-list li a {
+		font-size: 12px;
+	}
+	.b-4-text .name {
+		font-size: 20px;
+	}
+	.b-4-text p {
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 500px){
 	.b-1 h2 {
-		font-size: 28px;
+		font-size: 20px;
 		max-width: 200px;
 	}
 	.b-1 .b-block {

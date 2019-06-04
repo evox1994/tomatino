@@ -220,18 +220,76 @@
 @media screen and (max-width: 767px){
 	.b-1 .b-1-wrap {
 		background-position: left;
-		padding: 160px 20px;
+		padding: 70px 20px;
 	}
 	.b-1 h1 {
 		width: 100%;
+		font-size: 22px;
+	}
+	.b-2 .b-block {
+		padding-top: 30px;
+	}
+	.b-2 .filter {
+		margin-bottom: 30px;
 	}
 	.b-2 .filter li {
-		width: 100%;
+		width: calc(50% - 15px);
+		font-size: 14px;
 		margin-bottom: 10px;
+	}
+	.b-2-text {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.b-2-text span {
+		font-size: 16px;
+	}
+	.b-2 .info-list {
+		margin-bottom: 30px;
 	}
 	.b-2 .info-list li {
 		width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
+	}
+	.b-2 .info-list li p {
+		font-size: 14px;
+		padding-left: 50px;
+	}
+	.b-2 .info-list li p span {
+		font-size: 16px;
+	}
+	.b-2 .info-list li p img {
+		max-width: 40px;
+	}
+	.b-2 .image-list {
+		margin-bottom: 0;
+	}
+	.b-2 .image-list li {
+		width: 50%;
+	}
+	.b-3-list li {
+		padding-bottom: 18px;
+	}
+	.b-3-list li img {
+		margin-bottom: 15px;
+	}
+	.b-3-list li .name {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.b-3-list li p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 450px){
+	.b-2 .filter {
+		display: block;
+	}
+	.b-2 .filter li {
+		width: 100%;
+	}
+	.b-2 .image-list {
+		display: block;
 	}
 	.b-2 .image-list li {
 		width: 100%;

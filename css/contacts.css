@@ -74,3 +74,28 @@
 		margin: 0 auto 30px;
 	}
 }
+@media screen and (max-width: 767px){
+	.b-1 .b-block {
+		padding-top: 30px;
+	}
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.b-1 .info {
+		margin-bottom: 30px;
+	}
+	.b-1 .info .info-name {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.b-1 .info-list li {
+		margin-bottom: 10px;
+	}
+	.b-1 .info-list .name {
+		font-size: 14px;
+	}
+	.b-1 .info-list p {
+		font-size: 16px;
+	}
+}

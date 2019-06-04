@@ -72,6 +72,14 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1 .b-block {
+		padding-top: 30px;
+		padding-bottom: 5px;
+	}
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
 	.b-1-list li {
 		display: block;
 	}
@@ -83,5 +91,23 @@
 	.b-1-list .li-text {
 		width: 100%;
 		text-align: center;
+	}
+	.b-1-list .li-text .name {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.b-1-list .li-text .hash {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.b-1-list .li-text p {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	.b-1-list .li-text .date {
+		font-size: 14px;
+	}
+	.b-1-list li {
+		margin-bottom: 30px;
 	}
 }

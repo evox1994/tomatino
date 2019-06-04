@@ -1240,19 +1240,86 @@ button:hover {
     }
     .popup-wrap .image {
         width: 100%;
-        height: 300px;
+        height: 150px;
     }
     .popup-wrap .text {
         width: 100%;
     }
     .popup-wrap .text .name {
         text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .popup-wrap .text p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .popup-wrap .col p {
+        margin: 0 5px;
     }
     .popup-dop .dop-list li {
         width: 50%;
     }
     .popup-list {
         margin-bottom: 0;
+    }
+    .popup-list li span img {
+        max-height: 30px;
+    }
+    .popup-list li span b {
+        font-size: 16px;
+    }
+    .popup-wrap .popup-price-wine {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .popup-wrap .price {
+        font-size: 20px;
+    }
+    .popup-wrap .add-btn {
+        font-size: 14px;
+    }
+    .popup-dop .name {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .popup-dop p {
+        font-size: 12px;
+    }
+    .popup-dop .dop-list .image {
+        height: 100px;
+    }
+    .popup-dop .dop-list .dop-name {
+        font-size: 14px;
+    }
+    .popup-dop .dop-list .dop-info {
+        font-size: 13px;
+    }
+    .popup-wine-text .name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .popup-wine-text p {
+        font-size: 12px;
+    }
+    .button-text {
+        font-size: 10px;
+        padding-left: 30px;
+    }
+    .button-text .radio-btn {
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 10px);
+    }
+    .button-text .radio-btn.active::before {
+        width: 8px;
+        top: 7px;
+        left: 3px;
+    }
+    .button-text .radio-btn.active::after {
+        width: 12px;
+        top: 13px;
+        left: 8px;
     }
 }
 @media screen and (max-width: 500px){

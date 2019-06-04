@@ -76,8 +76,33 @@
 
 
 @media screen and (max-width: 767px){
+	.b-1 .b-block {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	.b-1 h1 {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.b-1 .place {
+		font-size: 14px;
+		padding-left: 40px;
+		margin-bottom: 30px;
+	}
+	.b-1 .place img {
+		max-width: 30px;
+	}
+	.b-1 .place span {
+		font-size: 16px;
+	}
 	.b-1 .place-list li {
 		width: 48%;
+	}
+	.b-1 .place-list li .item-wrap a {
+		font-size: 14px;
+	}
+	.b-1 .place-list li .item-wrap {
+		margin-bottom: 10px;
 	}
 }
 @media screen and (max-width: 500px){
