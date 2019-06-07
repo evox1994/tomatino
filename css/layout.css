@@ -1066,8 +1066,7 @@ button:hover {
     cursor: pointer;
 }
 .button-text .radio-btn.active {
-    background-color: rgb(255, 93, 36);
-    border-color: rgb(255, 93, 36);
+    background-color: rgb(227, 228, 227);
 }
 .button-text .radio-btn.error {
     background-color: #ff0000;
@@ -1081,7 +1080,7 @@ button:hover {
     position: absolute;
     top: 11px;
     left: 5px;
-    background-color: #ffffff;
+    background-color: #000000;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -1099,7 +1098,7 @@ button:hover {
     position: absolute;
     top: 18px;
     left: 11px;
-    background-color: #ffffff;
+    background-color: #000000;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
