@@ -28,6 +28,7 @@
 	display: -ms-flexbox;
 	justify-content: space-between;
 	align-items: flex-start;
+	flex-wrap: wrap;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 70px;

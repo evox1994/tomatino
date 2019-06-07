@@ -703,19 +703,22 @@ button:hover {
 .popup-wrap .text {
     width: calc(50% - 15px);
 }
-.popup-wrap .text .name {
+.popup-wrap .text .name, .popup-text .text .name {
     font-family: 'FuturaDemi';
     font-size: 30px;
     color: rgb(35, 31, 32);
     margin-bottom: 30px;
 }
-.popup-wrap .text p {
+.popup-wrap .text p, .popup-text .text p {
     display: block;
     color: rgb(122, 128, 128);
     font-size: 17px;
     line-height: 1.2;
     font-family: 'FuturaFuturisLightC';
     margin-bottom: 50px;
+}
+.popup-text .text p {
+    margin-bottom: 0;
 }
 .popup-list {
     display: flex;
