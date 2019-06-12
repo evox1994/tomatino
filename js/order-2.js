@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$('.nal-btn').on('click touchstart',function(){
 		$(this).addClass('active');
-		$(this).parents('div').find('input').val('Без сдачи');
+		$(this).parents('div.nal-wrap').find('input').val('Без сдачи');
 	});
 
 	$('.nal-btn').parents('div').find('input').on('input',function(){

@@ -121,12 +121,12 @@ $(document).ready(function(){
 			orderEl.dob = [];
 		} else {
 			summa = summa - Number(order[numt].price);
-			if ( order[numt].dob.length ){
+			/*if ( order[numt].dob.length ){
 				for (var i = 0; i < order[numt].dob.length; i++){
 					order[numt].price = Number(order[numt].price) - Number(order[numt].dob[i].price);
 				}
 				$(prod).find('.price-wrap .price span').text(order[numt].price);
-			}
+			}*/
 			order.splice(numt,1);
 			$(prod).find('.col').removeClass('active');
 			$(popup).find('.col').removeClass('active');
@@ -147,6 +147,7 @@ $(document).ready(function(){
 		var qwe;
 		var el = $(prod).find('.fancybox-a').attr('href');
 		var popup = $(el).attr('href');
+		var dobavka = {};
 
 		orderEl.price = Number($(prod).find('.price-wrap .price span').text());
 		orderEl.prodId = prod_id;
@@ -170,10 +171,21 @@ $(document).ready(function(){
 		} else {
 			orderEl.col = 1;
 		}
-		if (orderEl.prodId == dobMas.prodId){
-			orderEl.dob = dobMas.dob;
-		} else {
-			orderEl.dob = [];
+		var provid = prod_id.split('_');
+		var provdob;
+		orderEl.dob = [];
+		if ( provid.length > 1 ){
+			for (var j = 1; j < provid.length; j++){
+				$(popup).find('.dop-list li').find('.dop-add').each(function(){
+					provdob = $(this).attr('data-dob').replace('_','');
+					if (provdob == provid[j]){
+						dobavka.name = $(this).parents('li').find('.dop-name').text();
+						dobavka.price = Number($(this).parents('li').find('.price-wrap .price span').text());
+						dobavka.dobId = $(this).parents('li').attr('id');
+						dobavka = {};
+					}
+				});
+			}
 		}
 		for (var key in orderEl) {
 			clone[key] = orderEl[key];
@@ -202,12 +214,50 @@ $(document).ready(function(){
 		var numt = 0;
 		var coli = 0;
 		var numd = 0;
+		var el = $(prod).find('.fancybox-a').attr('href');
+		var popup = $(el).attr('href');
+		var dob = $(this).attr('data-dob');
+		var newprodid = prod_id;
 		var qwe;
+		/*Смена id товара*/
+		if ( $(this).hasClass('active') ){
+			newprodid = newprodid.replace(dob,'');
+		} else {
+			newprodid = prod_id + dob;
+			var newprodid2 = newprodid.split('_');
+			for (var i = 1; i < newprodid2.length; i++){
+				newprodid2[i] = newprodid2[i].replace('d','');
+			}
+			if ( newprodid2.length > 2 ){
+				for (var i = 1; i < (newprodid2.length - 1); i++){
+					var ii = i;
+					for (var j = newprodid2.length - 1; j > i; j--){
+						if ( Number(newprodid2[i]) > Number(newprodid2[j]) ){
+							var temp = newprodid2[i];
+							newprodid2[i] = newprodid2[j];
+							newprodid2[j] = temp;
+						} else {
+							break;
+						}
+					}
+				}
+				newprodid = newprodid2.join('_d').toString();
+			}
+		}
+		//$(this).toggleClass('active');
+		$(this).parents('.popup').find('.dop-add').attr('href','#'+newprodid);
+		$(prod).attr('id',newprodid);
+		$(this).parents('.popup').find('.add-btn').attr('href','#'+newprodid);
+		prod = $(this).attr('href');
+		prod_id = $(prod).attr('id');
+		$(prod).find('.add-btn').attr('href',prod);
 
 		orderEl.price = Number($(prod).find('.price-wrap .price span').text());
 		orderEl.prodId = prod_id;
 		dobMas.prodId = prod_id;
 		orderEl.name = $(prod).find('.name').text();
+		$(prod).find('.col').removeClass('active');
+		$(popup).find('.col').removeClass('active');
 		if ( order.length ) {
 			for (var i = 0; i < order.length; i++) {
 				if ( order[i].prodId == prod_id ) {
@@ -221,90 +271,56 @@ $(document).ready(function(){
 			}
 			if (nal) {
 				orderEl.col = coli;
+				$(prod).find('.col').addClass('active');
+				$(popup).find('.col').addClass('active');
+				orderEl.dob = [];
+				for (var i = 0; i < order[numt].dob.length; i++){
+					orderEl.dob.push(order[numt].dob[i]);
+				}
 			} else {
 				orderEl.col = 0;
 			}
 		} else {
 			orderEl.col = 0;
 		}
+		$(prod).find('.col p').text(orderEl.col);
+		$(popup).find('.col p').text(orderEl.col);
+		dobavka.name = $(this).parents('li').find('.dop-name').text();
+		dobavka.price = Number($(this).parents('li').find('.price-wrap .price span').text());
+		dobavka.dobId = $(this).parents('li').attr('id');
 		if ( $(this).hasClass('active') ){
 			$(this).removeClass('active');
-			if (nal){
-				if ( order[numt].dob.length ){
-					for (var j = 0; j < order[numt].dob.length; j++){
-						dobavkaMas.push(order[numt].dob[j]);
-						if ( order[numt].dob[j].dobId == $(this).parents('li').attr('id') ){
-							numd = j;
-						}
+			if ( orderEl.dob.length ){
+				for (var j = 0; j < orderEl.dob.length; j++){
+					dobavkaMas.push(orderEl.dob[j]);
+					if ( orderEl.dob[j].dobId == $(this).parents('li').attr('id') ){
+						numd = j;
 					}
 				}
-				orderEl.price = orderEl.price - dobavkaMas[numd].price;
-				$(prod).find('.price-wrap .price span').text( orderEl.price );
-				$(this).parents('.popup').find('.popup-wrap .price-wrap .price span').text( orderEl.price );
-				summa = summa - Number(orderEl.col)*Number(dobavkaMas[numd].price);
-				$('.header-basket span b').text(summa);
-				dobavkaMas.splice(numd,1);
-				orderEl.dob = dobavkaMas;
-				dobMas.dob = dobavkaMas;
-				for (var key in orderEl) {
-					clone[key] = orderEl[key];
-				}
-				order[numt] = clone;
-				qwe = JSON.stringify(order);
-				localStorage.setItem("tomatino-order",qwe);
-				localStorage.setItem("tomatino-summa",summa);
 			} else {
-				if ( orderEl.dob.length ){
-					for (var j = 0; j < orderEl.dob.length; j++){
-						dobavkaMas.push(orderEl.dob[j]);
-						if ( orderEl.dob[j].dobId == $(this).parents('li').attr('id') ){
-							numd = j;
-						}
-					}
-				}
-				orderEl.price = orderEl.price - dobavkaMas[numd].price;
-				$(prod).find('.price-wrap .price span').text( orderEl.price );
-				$(this).parents('.popup').find('.popup-wrap .price-wrap .price span').text( orderEl.price );
-				dobavkaMas.splice(numd,1);
-				orderEl.dob = dobavkaMas;
-				dobMas.dob = dobavkaMas;
+				dobavkaMas.push(dobavka);
 			}
+			orderEl.price = orderEl.price - dobavkaMas[numd].price;
+			$(prod).find('.price-wrap .price span').text( orderEl.price );
+			$(this).parents('.popup').find('.popup-wrap .price-wrap .price span').text( orderEl.price );
+			dobavkaMas.splice(numd,1);
+			orderEl.dob = dobavkaMas;
+			dobMas.dob = dobavkaMas;
 		} else {
 			$(this).addClass('active');
-			dobavka.name = $(this).parents('li').find('.dop-name').text();
-			dobavka.price = Number($(this).parents('li').find('.price-wrap .price span').text());
-			dobavka.dobId = $(this).parents('li').attr('id');
 			orderEl.price = orderEl.price + dobavka.price;
 			$(prod).find('.price-wrap .price span').text( orderEl.price );
 			$(this).parents('.popup').find('.popup-wrap .price-wrap .price span').text( orderEl.price );
-			if (nal) {
-				if ( order[numt].dob.length ){
-					for (var j = 0; j < order[numt].dob.length; j++){
-						dobavkaMas.push(order[numt].dob[j]);
-					}
-				}
-				dobavkaMas.push(dobavka);
-				orderEl.dob = dobavkaMas;
-				dobMas.dob = dobavkaMas;
-				for (var key in orderEl) {
-					clone[key] = orderEl[key];
-				}
-				order[numt] = clone;
-				summa = summa + Number(orderEl.col)*Number(dobavka.price);
-				$('.header-basket span b').text(summa);
-				qwe = JSON.stringify(order);
-				localStorage.setItem("tomatino-order",qwe);
-				localStorage.setItem("tomatino-summa",summa);
-			} else {
-				if ( orderEl.dob.length ){
-					for (var j = 0; j < orderEl.dob.length; j++){
+			if ( orderEl.dob.length ){
+				for (var j = 0; j < orderEl.dob.length; j++){
+					if (!(orderEl.dob[j].dobId == dobavka.dobId)){
 						dobavkaMas.push(orderEl.dob[j]);
 					}
 				}
-				dobavkaMas.push(dobavka);
-				orderEl.dob = dobavkaMas;
-				dobMas.dob = dobavkaMas;
 			}
+			dobavkaMas.push(dobavka);
+			orderEl.dob = dobavkaMas;
+			dobMas.dob = dobavkaMas;
 		}
 		return false;
 	});
@@ -317,6 +333,8 @@ $(document).ready(function(){
 		var op = $(this).parents('.pr').find('.text p').text();
 		var price = $(this).parents('.pr').find('.price span').text();
 		var prod_id = $(this).parents('.pr').attr('id');
+		var prod = '#'+prod_id;
+		var dobavka = {};
 		var dobavkaMas = [];
 
 		$(popup).find('.popup-wrap .add-btn').attr('href','#'+prod_id);
@@ -331,42 +349,67 @@ $(document).ready(function(){
 		}
 		if ( $(this).parents('.b-block').attr('id') == 'pizza' ){
 			$(popup).find('.dop-add').attr('href','#'+prod_id);
+			orderEl.price = Number($(prod).find('.price-wrap .price span').text());
+			orderEl.prodId = prod_id;
+			orderEl.name = $(prod).find('.name').text();
+			orderEl.col = coli;
 			if (order.length){
 				for (var i = 0; i < order.length; i++) {
 					if ( order[i].prodId == prod_id ) {
 						if ( order[i].dob.length ){
+							$(popup).find('.dop-list li .dop-add').removeClass('active');
 							for (var j = 0; j < order[i].dob.length; j++){
 								$(popup).find('.dop-list li').each(function(){
 									if ( $(this).attr('id') == order[i].dob[j].dobId ){
 										$(this).find('.dop-add').addClass('active');
-									} else {
-										$(this).find('.dop-add').removeClass('active');
 									}
 								});
 							}
+						} else {
+							$(popup).find('.dop-list li .dop-add').removeClass('active');
 						}
 						break;
 					} else {
 						$(popup).find('.dop-list li .dop-add').removeClass('active');
+						var provid = prod_id.split('_');
+						var provdob;
+						if (provid.length > 1) {
+							orderEl.dob = [];
+							for (var j = 1; j < provid.length; j++){
+								$(popup).find('.dop-list li').find('.dop-add').each(function(){
+									provdob = $(this).attr('data-dob').replace('_','');
+									if (provdob == provid[j]){
+										dobavka.name = $(this).parents('li').find('.dop-name').text();
+										dobavka.price = Number($(this).parents('li').find('.price-wrap .price span').text());
+										dobavka.dobId = $(this).parents('li').attr('id');
+										$(this).addClass('active');
+										orderEl.dob.push(dobavka);
+										dobavka = {};
+									}
+								});
+							}
+						}
 					}
 				}
 			} else {
-				if ( dobMas.dob.length ){
-					if ( dobMas.prodId == prod_id ){
-						for (var j = 0; j < dobMas.dob.length; j++){
-							$(popup).find('.dop-list li').each(function(){
-								if ( $(this).attr('id') == dobMas.dob[j].dobId ){
-									$(this).find('.dop-add').addClass('active');
-								} else {
-									$(this).find('.dop-add').removeClass('active');
-								}
-							});
-						}
-					} else {
-						$(popup).find('.dop-list li .dop-add').removeClass('active');
+				$(popup).find('.dop-list li .dop-add').removeClass('active');
+				var provid = prod_id.split('_');
+				var provdob;
+				if (provid.length > 1) {
+					orderEl.dob = [];
+					for (var j = 1; j < provid.length; j++){
+						$(popup).find('.dop-list li').find('.dop-add').each(function(){
+							provdob = $(this).attr('data-dob').replace('_','');
+							if (provdob == provid[j]){
+								dobavka.name = $(this).parents('li').find('.dop-name').text();
+								dobavka.price = Number($(this).parents('li').find('.price-wrap .price span').text());
+								dobavka.dobId = $(this).parents('li').attr('id');
+								$(this).addClass('active');
+								orderEl.dob.push(dobavka);
+								dobavka = {};
+							}
+						});
 					}
-				} else {
-					$(popup).find('.dop-list li .dop-add').removeClass('active');
 				}
 			}
 		}
